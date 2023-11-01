@@ -2,11 +2,11 @@
   const month = new Date().getMonth() + 1;
   const day = new Date().getDate();
   const year = new Date().getFullYear();
-  const thisYearBirthday = new Date(`11-01-${year}`);
+  const thisYearBirthday = new Date(`11/01/${year}`);
   const today = new Date();
 
   const targetBirthday =
-    thisYearBirthday > today ? thisYearBirthday : new Date(`11-01-${year + 1}`);
+    thisYearBirthday > today ? thisYearBirthday : new Date(`11/01/${year + 1}`);
   const targetDateTime = targetBirthday.getTime();
 
   // Reactive variables
